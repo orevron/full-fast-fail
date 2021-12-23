@@ -6,6 +6,7 @@
 # Resource 'aws_launch_configuration.fail' has a public IP address associated.
 
 resource "aws_launch_configuration" "fail" {
+
   root_block_device {
     encrypted = false
   }

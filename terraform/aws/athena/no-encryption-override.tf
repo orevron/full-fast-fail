@@ -5,6 +5,7 @@
 
 
 resource "aws_athena_workgroup" "fail" {
+
   name = "example"
 
   configuration {

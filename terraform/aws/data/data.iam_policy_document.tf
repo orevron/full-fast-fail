@@ -8,6 +8,7 @@
 # CKV_AWS_110: "Ensure IAM policies does not allow privilege escalation"
 
 data "aws_iam_policy_document" "fail" {
+
   version = "2012-10-17"
 
   statement {

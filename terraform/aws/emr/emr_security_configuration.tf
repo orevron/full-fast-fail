@@ -3,6 +3,7 @@
 
 # tfsec
 resource "aws_emr_security_configuration" "fail" {
+
   name = "fail"
 
   configuration = <<EOF

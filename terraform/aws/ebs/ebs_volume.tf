@@ -10,11 +10,13 @@
 # Resource 'aws_ebs_volume.fail' uses default value for encrypted
 
 resource "aws_ebs_volume" "fail" {
+
   availability_zone = "eu-west-1a"
   size              = 1
 }
 
 resource "aws_volume_attachment" "ebs_att" {
+
   device_name = "/dev/sdh"
   volume_id   = aws_ebs_volume.fail.id
   instance_id = aws_instance.web.id

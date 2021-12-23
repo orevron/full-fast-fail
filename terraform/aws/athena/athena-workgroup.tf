@@ -7,6 +7,7 @@
 # AWS060 Resource 'aws_athena_workgroup.fail' has enforce_workgroup_configuration set to false.
 
 resource "aws_athena_workgroup" "fail" {
+
   name = "wg-non-encrypted"
 
   configuration {

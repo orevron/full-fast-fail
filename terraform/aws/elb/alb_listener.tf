@@ -6,5 +6,6 @@
 # AWS004 Resource 'aws_alb_listener.fail' uses plain HTTP instead of HTTPS.
 
 resource "aws_alb_listener" "fail" {
+
   protocol = "HTTP"
 }

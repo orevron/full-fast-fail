@@ -3,6 +3,7 @@
 # Check: CKV_AWS_99: "Ensure Glue Security Configuration Encryption is enabled"
 
 resource "aws_glue_security_configuration" "test" {
+
   name = "example"
 
   encryption_configuration {

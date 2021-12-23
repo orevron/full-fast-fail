@@ -6,6 +6,7 @@
 
 resource "aws_config_configuration_aggregator" "organization" {
 
+
   name = "example"
 
   account_aggregation_source {

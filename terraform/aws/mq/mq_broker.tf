@@ -8,6 +8,7 @@
 # Resource 'aws_mq_broker.example' does not have publicly_accessible set to false
 
 resource "aws_mq_broker" "example" {
+
   broker_name = "example"
 
   engine_type         = "ActiveMQ"

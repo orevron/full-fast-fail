@@ -12,6 +12,7 @@
 # AWS079 Resource 'aws_instance.fail' is missing `metadata_options` block - it is required with `http_tokens` set to `required` to make Instance Metadata Service more secure.
 
 resource "aws_instance" "fail" {
+
   ami                         = var.ami
   instance_type               = "t2.nano"
   associate_public_ip_address = true

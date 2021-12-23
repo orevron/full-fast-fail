@@ -5,6 +5,7 @@
 # Resource 'aws_kms_key.fail_0' does not have KMS Key auto-rotation enabled.
 
 resource "aws_kms_key" "fail_0" {
+
   description = "description"
   policy      = <<POLICY
 {

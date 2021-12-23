@@ -4,6 +4,7 @@
 # tfsec
 
 resource "aws_glacier_vault" "my_archive2" {
+
   name = "MyArchive"
 
   access_policy = <<EOF

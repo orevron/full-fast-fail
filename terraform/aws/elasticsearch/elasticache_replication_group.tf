@@ -8,6 +8,7 @@
 # AWS036 Resource 'aws_elasticache_replication_group.fail' defines an unencrypted Elasticache Replication Group (transit_encryption_enabled set to false).
 
 resource "aws_elasticache_replication_group" "fail" {
+
   replication_group_id          = "foo"
   replication_group_description = "my foo cluster"
 

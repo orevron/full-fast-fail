@@ -11,6 +11,7 @@
 # AWS067  Resource 'aws_eks_cluster.fail' missing the enabled_cluster_log_types attribute to enable control plane logging
 
 resource "aws_eks_cluster" "fail" {
+
   name     = "fail_cluster"
   role_arn = var.cluster_arn
   vpc_config {

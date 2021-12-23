@@ -13,6 +13,7 @@
 # AWS091 Resource 'aws_db_instance.default' has backup retention period set to a low value
 
 resource "aws_db_instance" "default" {
+
   name                   = var.dbname
   engine                 = "mysql"
   option_group_name      = aws_db_option_group.default.name

@@ -11,6 +11,7 @@
 # Resource 'aws_docdb_cluster.examplea' does not use CMK
 
 resource "aws_docdb_cluster" "examplea" {
+
   cluster_identifier = var.cluster_identifier
   engine             = "docdb"
   engine_version     = ""
@@ -31,6 +32,7 @@ resource "aws_docdb_cluster" "examplea" {
 }
 
 resource "aws_docdb_cluster_parameter_group" "examplea" {
+
   family      = var.family
   name        = var.param_group_name
   description = "docdb cluster parameter group"

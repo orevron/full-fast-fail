@@ -6,6 +6,7 @@
 # CodeBuild project 'aws_codebuild_project.default' does not encrypt produced artifacts
 
 resource "aws_codebuild_project" "default" {
+
   name         = "example"
   service_role = "aws_iam_role.example.arn"
 

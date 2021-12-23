@@ -8,6 +8,7 @@
 # AWS023 Resource 'aws_ecr_repository.name' defines a disabled ECR image scan.
 # AWS078 Resource 'aws_ecr_repository.name' has `image_tag_mutability` attribute  not set to `IMMUTABLE`
 resource "aws_ecr_repository" "name" {
+
   name                 = "bar"
   image_tag_mutability = "MUTABLE"
 }

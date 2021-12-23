@@ -10,6 +10,7 @@
 # AWS083 Resource 'aws_alb.fail' sets the drop_invalid_header_fields to false
 
 resource "aws_alb" "fail" {
+
   name               = "bad_alb"
   internal           = false
   load_balancer_type = "application"

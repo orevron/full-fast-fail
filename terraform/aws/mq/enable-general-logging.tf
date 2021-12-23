@@ -7,6 +7,7 @@
 # Resource 'aws_mq_broker.fail' does not have logs.audit set to true
 
 resource "aws_mq_broker" "fail" {
+
   broker_name = "example"
 
   configuration {

@@ -10,6 +10,7 @@
 # AWS045 Resource 'aws_cloudfront_distribution.s3_distribution' does not have a WAF in front of it.
 
 resource "aws_cloudfront_distribution" "s3_distribution" {
+
   dynamic "origin" {
     for_each = local.origins
     content {
@@ -87,6 +88,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 }
 
 variable "viewer_certificate" {
+
   default = {
     cloudfront_default_certificate = false
     minimum_protocol_version       = "TLSv1.1_2015"

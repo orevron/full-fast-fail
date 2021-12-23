@@ -15,6 +15,7 @@
 # AWS070 Resource 'aws_elasticsearch_domain.node_to_node_encryption_disabled' is missing 'AUDIT_LOGS` in one of the `log_publishing_options`-`log_type` attributes so audit log is not enabled
 
 resource "aws_elasticsearch_domain" "node_to_node_encryption_disabled" {
+
   domain_name = "node_to_node_encryption_disabled"
   domain_endpoint_options {
     enforce_https       = false

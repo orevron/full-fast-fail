@@ -5,6 +5,7 @@
 # Resource 'aws_ecs_task_definition.fail' has efs configuration with in transit encryption implicitly disabled
 
 resource "aws_ecs_task_definition" "fail" {
+
   container_definitions = <<EOF
 [
   {

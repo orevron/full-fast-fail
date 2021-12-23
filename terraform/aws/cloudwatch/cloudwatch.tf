@@ -6,14 +6,17 @@
 # AWS089 Resource 'aws_cloudwatch_log_group.logs' is only using default encryption
 
 resource "aws_cloudwatch_log_group" "logs" {
+
   name = var.log_group_name
 }
 
 variable "log_group_name" {
+
   default = "MyLogGroupName"
 }
 
 variable "common_tags" {
+
   type = map(string)
   default = {
     automatedby = "JamesWoolfenden"

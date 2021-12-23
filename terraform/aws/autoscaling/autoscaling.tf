@@ -2,6 +2,7 @@
 # CKV_AWS_153: "Autoscaling groups should supply tags to launch configurations"
 
 resource "aws_autoscaling_group" "fail" {
+
   name                 = "foobar3-terraform-test"
   max_size             = 5
   min_size             = 2

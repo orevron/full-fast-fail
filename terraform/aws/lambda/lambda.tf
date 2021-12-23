@@ -11,6 +11,7 @@
 # Resource 'aws_lambda_function.morefail' uses default value for tracing_config.mode
 
 resource "aws_lambda_function" "morefail" {
+
   function_name = "morefail"
   role          = ""
   handler       = "index.handler"

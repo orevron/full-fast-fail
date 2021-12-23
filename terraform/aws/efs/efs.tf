@@ -7,6 +7,7 @@
 # AWS048 Resource 'aws_efs_file_system.sharedstore' actively does not have encryption applied.
 resource "aws_efs_file_system" "sharedstore" {
 
+
   creation_token = var.efs["creation_token"]
 
   lifecycle_policy {

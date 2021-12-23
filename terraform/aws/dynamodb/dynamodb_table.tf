@@ -8,6 +8,7 @@
 # AWS086 Resource 'aws_dynamodb_table.default' doesn't have point in time recovery
 
 resource "aws_dynamodb_table" "default" {
+
   name           = "GameScores"
   billing_mode   = "PROVISIONED"
   read_capacity  = 20
